@@ -84,16 +84,46 @@
 
 
 
-<meta name="description" content="描述什么">
+<meta name="description" content="#数据库数据库 —&amp;gt; 专门用来存储数据的仓库     允许我们通过一些指令来对仓库中的数据进行快速的操作. 这些指令就是SQL语句
+数据库类型:关系型数据库(结构化数据库); 对象数据库,内存数据库 
+
+数据库特点:
+1.关系型数据库是一堆表的集合
+2.数据库量可能会很大, 数据每条可能会很复杂
+3.相对于程序, 数据库比较独立
+
+数据库里比较常见的概念:
+1.表
+数据库就是一堆表的集合,">
 <meta property="og:type" content="article">
 <meta property="og:title" content="北鼻的我">
-<meta property="og:url" content="http://yoursite.com/2016/05/23/北鼻的我/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/05/24/sqlite/index.html">
 <meta property="og:site_name" content="北鼻的我">
-<meta property="og:description" content="描述什么">
-<meta property="og:updated_time" content="2016-05-23T12:09:04.000Z">
+<meta property="og:description" content="#数据库数据库 —&amp;gt; 专门用来存储数据的仓库     允许我们通过一些指令来对仓库中的数据进行快速的操作. 这些指令就是SQL语句
+数据库类型:关系型数据库(结构化数据库); 对象数据库,内存数据库 
+
+数据库特点:
+1.关系型数据库是一堆表的集合
+2.数据库量可能会很大, 数据每条可能会很复杂
+3.相对于程序, 数据库比较独立
+
+数据库里比较常见的概念:
+1.表
+数据库就是一堆表的集合,">
+<meta property="og:updated_time" content="2016-05-24T13:10:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="北鼻的我">
-<meta name="twitter:description" content="描述什么">
+<meta name="twitter:description" content="#数据库数据库 —&amp;gt; 专门用来存储数据的仓库     允许我们通过一些指令来对仓库中的数据进行快速的操作. 这些指令就是SQL语句
+数据库类型:关系型数据库(结构化数据库); 对象数据库,内存数据库 
+
+数据库特点:
+1.关系型数据库是一堆表的集合
+2.数据库量可能会很大, 数据每条可能会很复杂
+3.相对于程序, 数据库比较独立
+
+数据库里比较常见的概念:
+1.表
+数据库就是一堆表的集合,">
 
 
 
@@ -111,7 +141,7 @@
   };
 </script>
 
-  <title> 北鼻的我 | 北鼻的我 </title>
+  <title>  | 北鼻的我 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -169,7 +199,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -179,7 +209,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -231,7 +261,7 @@
             
             
               
-                北鼻的我
+                
               
             
           </h1>
@@ -242,9 +272,9 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-05-23T20:09:04+08:00" content="2016-05-23">
-              2016-05-23
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-05-24T21:10:43+08:00" content="2016-05-24">
+              2016-05-24
             </time>
           </span>
 
@@ -271,7 +301,66 @@
       
 
       
-        
+        <p>#数据库<br>数据库 —&gt; 专门用来存储数据的仓库<br>     允许我们通过一些指令来对仓库中的数据进行快速的操作. 这些指令就是SQL语句</p>
+<pre><code>数据库类型:关系型数据库(结构化数据库); 对象数据库,内存数据库 
+
+数据库特点:
+1.关系型数据库是一堆表的集合
+2.数据库量可能会很大, 数据每条可能会很复杂
+3.相对于程序, 数据库比较独立
+
+数据库里比较常见的概念:
+1.表
+数据库就是一堆表的集合,
+2.字段(数据的分段)
+和列相同
+3.第几条数据
+4.非空
+5.唯一
+6.主键 主键一般也是索引, 可以加快查询速度
+7.外键 一个表的主键可以作为另外一张表的外键, 实现关联查询
+8.默认值
+9.CHECK 在数据库中, CHECK约束是指约束表中某一个或者某一些字段接收的数据值, 或者数据格式
+10.自增序列
+</code></pre><p>SQlite</p>
+<pre><code>专门为移动端设计的, 麻雀虽小, 五脏俱全;
+他是一种无类型的数据库, 为了规范性, 我们建议加上类型
+SQL 提供了一种近似类型
+SQLite 提供了五大基本类型
+
+亲缘规则:
+1. 如果字符串中包含INT类型, 那么该字段的亲缘类型为Integer(整形就用INTEGER).
+2. 如果字符串中包含CHAR CLOB 或者 TEXT,那么该字段的亲缘类型为VARCHAR(文本类型)
+3. INSERT INTO table系统的关键字用大写, 小写的是名字
+4. 如果字符串中包含BLOB, 那么该字段的亲缘类型为NONE(二进制文件)
+5. 如果字符串中包含REAL, FLOAT DOUBLE, 那么该字段的亲缘类型为REAL(浮点数)
+6. 其余情况下, 字段的类型为NUMERIC
+</code></pre><p>作用也只有增删改查而已</p>
+<pre><code>数据库基本操作:
+关注点: 简单的CRUD(增删改查) 外键关联, 约束, 级联查询(join left right), 数据库游标, 触发器, 存储过程, 数据泵还原(导出还原), 用户创建, 权限升级
+(优先级 12);
+创建 增删改查
+创建:
+CREATE TABLE student(name TEXT NOT NULL, gender TEXT);
+增加
+1.
+INSERT INTO student(name, gender) value(&apos;陈肖东&apos;, &apos;女&apos;);
+2.
+INSERT INTO student VALUE(&apos;陈肖东&apos;, &apos;女&apos;);
+删除
+DELETE TABLE student;
+DELETE FROM student WHERE name = &apos;陈肖东&apos;;
+改
+UPDATE student SET gender = &apos;男&apos; WHERE name = &apos;陈肖东&apos;;
+查询
+SELECT *(* 代表所有) FROM student WHERE = &apos;女&apos;;
+</code></pre><p> SQLite 使用步骤</p>
+<pre><code>1. 添加SQLite框架
+2. 创建SQLite对象
+3. 打开数据库
+4. 执行SQL语句
+5. 关闭数据库
+</code></pre>
       
     </div>
 
@@ -291,20 +380,6 @@
     <footer class="post-footer">
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/05/23/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -350,10 +425,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
+            Übersicht
           </li>
         </ul>
       
@@ -369,8 +444,8 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">posts</span>
+              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
 
@@ -401,7 +476,7 @@
               
             
             
-              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+              <p class="post-toc-empty">Dieser Artikel hat kein Inhaltsverzeichnis</p>
             
           </div>
         </section>
@@ -428,7 +503,7 @@
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
