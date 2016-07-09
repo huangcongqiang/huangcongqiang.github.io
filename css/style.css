@@ -221,7 +221,7 @@ a {
   z-index: 100;
 }
 #container #mobile-nav #header .profilepic:hover {
-  transform: scale(2);
+  -webkit-transform: scale(2);
 }
 #container #mobile-nav #header .header-menu {
   height: auto;
